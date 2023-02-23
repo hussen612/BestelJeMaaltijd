@@ -1,6 +1,22 @@
 $maincolor1: #1c3b42;
+body{
+    background-color: rgb(255, 255, 255);
+    padding: 0;
+    margin: 0;
+}
+nav .navbar{
+    background-color: $maincolor1;
+    width: 100vw;
+    height: 8vh;
+    top: 0;
+    position: absolute;
+    padding: 0;
+    margin: 0;
+}
 
-.navbar{
+#footer{
+    position: fixed;
+    bottom: 0;
     background-color: $maincolor1;
     width: 100vw;
     height: 8vh;
