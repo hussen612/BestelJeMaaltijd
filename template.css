@@ -1,5 +1,5 @@
 body {
-  background-color: rgb(255, 255, 255);
+  background-color: whitesmoke;
   padding: 0;
   margin: 0;
 }
@@ -20,4 +20,24 @@ nav .navbar {
   background-color: #1c3b42;
   width: 100vw;
   height: 8vh;
+}
+
+.logo {
+  position: absolute;
+  width: 5vw;
+  top: 3.5vh;
+  margin-left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.productgrid {
+  display: grid;
+  grid-auto-columns: -webkit-max-content;
+  grid-auto-columns: max-content;
+  grid-auto-flow: dense;
+  grid-auto-rows: minmax(100px, auto);
+  grid-gap: 25px;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 60px auto;
+  max-width: 800px;
 }/*# sourceMappingURL=template.css.map */
