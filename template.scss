@@ -1,6 +1,8 @@
 $maincolor1: #1c3b42;
+$bgcolor: #c3c3c3;
+
 body{
-    background-color: rgb(255, 255, 255);
+    background-color: $test1;
     padding: 0;
     margin: 0;
 }
