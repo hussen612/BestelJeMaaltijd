@@ -1,1 +1,10 @@
-/*# sourceMappingURL=menu.css.map */
+main {
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  width: 90%;
+  height: 100vh;
+  border: gray solid 1px;
+  margin-left: 50%;
+  transform: translate(-50%, 0);
+}/*# sourceMappingURL=menu.css.map */
