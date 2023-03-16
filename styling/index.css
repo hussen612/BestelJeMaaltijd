@@ -1,0 +1,24 @@
+main {
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  width: 80%;
+  height: 100vh;
+  background-color: aquamarine;
+  margin-left: 50%;
+  transform: translate(-50%, 0);
+}
+main .banner {
+  position: absolute;
+  top: 10%;
+  left: 0;
+}
+main .banner img {
+  width: 106.7%;
+}
+main .banner .subtext {
+  color: #fff;
+  position: absolute;
+  text-align: center;
+  max-width: 10vw;
+}/*# sourceMappingURL=index.css.map */
