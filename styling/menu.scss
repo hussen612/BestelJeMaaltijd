@@ -1,3 +1,7 @@
+html,body{overflow-y: scroll;
+margin: 0;
+padding:0; }
+
 main{
     position: fixed;
     top: 0;
@@ -7,4 +11,22 @@ main{
     border: gray solid 1px;
     margin-left: 50%;
     transform: translate(-50%, 0);
+}
+
+
+.ProductContainer {
+    display: grid;
+    grid-auto-columns: -webkit-max-content;
+    grid-auto-columns: max-content;
+    grid-auto-flow: dense;
+    grid-auto-rows: minmax(100px, auto);
+    column-gap: 15vw;
+    row-gap: 5vh;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 60px auto;
+    max-width: 1400px;
+
+    img{
+        width: 8vw;
+    }
 }
