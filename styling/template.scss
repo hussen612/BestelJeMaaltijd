@@ -1,44 +1,52 @@
-@import url(https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic);
+@import url(https://fonts.googleapis.com/css?family=Roboto+Mono:100,200,300,regular,500,600,700,100italic,200italic,300italic,italic,500italic,600italic,700italic);
 $maincolor1: #1c3b42;
 $bgcolor: #c3c3c3;
 
 // TEMPLATE IS KLAAR NIET AANPASSEN!
 
-body{
+body {
     background-color: whitesmoke;
     padding: 0;
     margin: 0;
-    font-family: 'roboto', sans-serif;
+    font-family: 'Roboto Mono'
 }
-nav .navbar{
+
+nav .navbar {
     background-color: $maincolor1;
     width: 100vw;
-    height: 6vh;
+    height: 8vh;
     top: 0;
     position: fixed;
     padding: 0;
     margin: 0;
     z-index: 5;
 
-    a{
-        top: 3vh;
+    a {
         color: white;
         font-size: 1.5rem;
         font-weight: 600;
         text-decoration: none;
-        padding: 0 1rem;
-        &:hover{
+        padding-left: 2.5%;
+        line-height: 8vh;
+        
+        &:hover {
             color: $bgcolor;
         }
     }
-    .CartImage{
-        width: 50px;
-        margin-left: 50%;
-        transform: translate(-50%, -50%);
-        float: right;
+    .NavLinks{
+        padding-left: 4%;
     }
+    .logo {
+        position: absolute;
+        width: 5vw;
+        top: 0.5vh;
+        margin-left: 50%;
+        transform: translate(-50%, 0);
+    }
+
 }
-#footer{
+
+#footer {
     position: fixed;
     bottom: 0;
     background-color: $maincolor1;
@@ -47,33 +55,32 @@ nav .navbar{
     display: flex;
     text-align: center;
     z-index: 5;
-    a{
-        margin-top: 15px;
+
+    a {
+        line-height: 5vh;
         margin-left: 12%;
         color: white;
         font-size: 1.1rem;
         font-weight: 600;
         text-decoration: none;
         transform: translate(-50, 0);
-        &:hover{
+
+        &:hover {
             color: $bgcolor;
         }
     }
-    h5{
+
+    h5 {
         margin-left: 10%;
-        margin-top: 25px;
+        line-height: 1vh;
     }
+
+
 }
 
-.logo{
-    position: absolute;
-    width: 3vw;
-    top: 3vh;
-    margin-left: 50%;
-    transform: translate(-50%, -50%);
-}
 
-.productgrid{  
+
+.productgrid {
     display: grid;
     grid-auto-columns: max-content;
     grid-auto-flow: dense;

@@ -1,18 +1,17 @@
-html,body{overflow-y: scroll;
+html,body{
 margin: 0;
 padding:0; }
 
 main{
-    position: fixed;
-    top: 0;
+    margin-top: 3vh;
+    margin-bottom: 3vh;
     z-index: 1;
     width: 90%;
-    height: 100vh;
+    height: 18  0vh;
     border: gray solid 1px;
     margin-left: 50%;
     transform: translate(-50%, 0);
 }
-
 
 .ProductContainer {
     display: grid;
@@ -25,7 +24,7 @@ main{
     grid-template-columns: repeat(3, 1fr);
     margin: 60px auto;
     max-width: 1400px;
-
+    text-align: center;
     img{
         width: 8vw;
     }
