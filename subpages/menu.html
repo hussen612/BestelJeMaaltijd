@@ -9,8 +9,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="../styling/template.css">
     <link rel="stylesheet" href="../styling/menu.css">
+    <script src="../script.js" async></script>
 </head>
 <!-- https://github.com/hamcodir/js-shopping-cart -->
+
 <body>
     <nav>
         <div class="navbar">
@@ -18,124 +20,110 @@
             <div class="NavLinks">
                 <a href="../index.html">Home</a>
                 <a href="menu.html">Menu</a>
-                <a href="contact.html">Contact</a>`
+                <a href="contact.html">Contact</a>
             </div>
         </div>
     </nav>
     <main>
         <div class="ProductContainer">
-            <div id="item1" class="food-item product">
-                <h3 class="food-title">Pizza</h3>
-                <img src="../images/Pizza-met-ansjovis.jpeg" class="food-image">
-                <p class="food-subtext">pizza subtext pizza subtext pizza subtext</p>
-                <span class="shop-item-price">$14.99</span>
-                <button data-id="4" data-price="1000" data-title="Product name">Add to cart</button>
-            </div>
-            <div id="item2" class="food-item product">
-                <h3 class="food-title">Pizza</h3>
-                <img src="../images/Pizza-met-ansjovis.jpeg" class="food-image">
-                <p class="food-subtext">pizza subtext pizza subtext pizza subtext</p>
-                <span class="shop-item-price">$14.99</span>
-                <button data-id="4" data-price="1000" data-title="Product name">Add to cart</button>
-            </div>
-            <div id="item3" class="food-item product">
-                <h3 class="food-title">Pizza</h3>
-                <img src="../images/Pizza-met-ansjovis.jpeg" class="food-image">
-                <p class="food-subtext">pizza subtext pizza subtext pizza subtext</p>
-                <span class="shop-item-price">$14.99</span>
-                <button data-id="4" data-price="1000" data-title="Product name">Add to cart</button>
-            </div>
-            <div id="item4" class="food-item product">
-                <h3 class="food-title">Pizza</h3>
-                <img src="../images/Pizza-met-ansjovis.jpeg" class="food-image">
-                <p class="food-subtext">pizza subtext pizza subtext pizza subtext</p>
-                <span class="shop-item-price">$14.99</span>
-                <button data-id="4" data-price="1000" data-title="Product name">Add to cart</button>
-            </div>
-            <div id="item5" class="food-item product">
-                <h3 class="food-title">Pizza</h3>
-                <img src="../images/Pizza-met-ansjovis.jpeg" class="food-image">
-                <p class="food-subtext">pizza subtext pizza subtext pizza subtext</p>
-                <span class="shop-item-price">$14.99</span>
-                <button data-id="4" data-price="1000" data-title="Product name">Add to cart</button>
-            </div>
-            <div id="item6" class="food-item product">
-                <h3 class="food-title">Pizza</h3>
-                <img src="../images/Pizza-met-ansjovis.jpeg" class="food-image">
-                <p class="food-subtext">pizza subtext pizza subtext pizza subtext</p>
-                <span class="shop-item-price">$14.99</span>
-                <button data-id="4" data-price="1000" data-title="Product name">Add to cart</button>
-            </div>
-            <div id="item4" class="food-item product">
-                <h3 class="food-title">Pizza</h3>
-                <img src="../images/Pizza-met-ansjovis.jpeg" class="food-image">
-                <p class="food-subtext">pizza subtext pizza subtext pizza subtext</p>
-                <span class="shop-item-price">$14.99</span>
-                <button data-id="4" data-price="1000" data-title="Product name">Add to cart</button>
-            </div>
-            <div id="item5" class="food-item product">
-                <h3 class="food-title">Pizza</h3>
-                <img src="../images/Pizza-met-ansjovis.jpeg" class="food-image">
-                <p class="food-subtext">pizza subtext pizza subtext pizza subtext</p>
-                <span class="shop-item-price">$14.99</span>
-                <button data-id="4" data-price="1000" data-title="Product name">Add to cart</button>
-            </div>
-            <div id="item6" class="food-ite productm">
-                <h3 class="food-title">Pizza</h3>
-                <img src="../images/Pizza-met-ansjovis.jpeg" class="food-image">
-                <p class="food-subtext">pizza subtext pizza subtext pizza subtext</p>
-                <span class="shop-item-price">$14.99</span>
-                <button data-id="4" data-price="1000" data-title="Product name">Add to cart</button>
-            </div>
-            <div id="item4" class="food-item product">
-                <h3 class="food-title">Pizza</h3>
-                <img src="../images/Pizza-met-ansjovis.jpeg" class="food-image">
-                <p class="food-subtext">pizza subtext pizza subtext pizza subtext</p>
-                <span class="shop-item-price">$14.99</span>
-                <button data-id="4" data-price="1000" data-title="Product name">Add to cart</button>
-            </div>
-            <div id="item5" class="food-item product">
-                <h3 class="food-title">Pizza</h3>
-                <img src="../images/Pizza-met-ansjovis.jpeg" class="food-image">
-                <p class="food-subtext">pizza subtext pizza subtext pizza subtext</p>
-                <span class="shop-item-price">$14.99</span>
-                <button data-id="4" data-price="1000" data-title="Product name">Add to cart</button>
-            </div>
-            <div id="item6" class="food-item product">
-                <h3 class="food-title">Pizza</h3>
-                <img src="../images/Pizza-met-ansjovis.jpeg" class="food-image">
-                <p class="food-subtext">pizza subtext pizza subtext pizza subtext</p>
-                <span class="shop-item-price">$14.99</span>
-                <button data-id="4" data-price="1000" data-title="Product name">Add to cart</button>
-            </div>
-        
-        <div class="winkel-wagen">
-            <table>
-                <thead>
-                    <tr>
-                        <th>Title</th>
-                        <th>Price</th>
-                        <th>Qty</th>
-                    </tr>
-                </thead>
-                <tbody id="tbody">
-                </tbody>
-            </table>
+            <section class="container content-section">
+                <div class="shop-items">
+                    <div class="shop-item">
+                        <span class="shop-item-title">Ansjovis Pizza</span>
+                        <img class="shop-item-image" src="../images/Pizza-met-ansjovis.jpeg">
+                        <div class="shop-item-details">
+                            <span class="shop-item-price">$12.99</span>
+                            <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                        </div>
+                    </div>
+                    <div class="shop-item">
+                        <span class="shop-item-title">Sate</span>
+                        <img class="shop-item-image" src="../images/sate-van-varkenshaas-750x536.jpeg">
+                        <div class="shop-item-details">
+                            <span class="shop-item-price">$8.99</span>
+                            <button class="btn btn-primary shop-item-button"type="button">ADD TO CART</button>
+                        </div>
+                    </div>
+                    <div class="shop-item">
+                        <span class="shop-item-title">Loaded Nachos</span>
+                        <img class="shop-item-image" src="../images/loaded-nachos.webp">
+                        <div class="shop-item-details">
+                            <span class="shop-item-price">$7.75</span>
+                            <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                        </div>
+                    </div>
+                    <div class="shop-item">
+                        <span class="shop-item-title">Classis Burger</span>
+                        <img class="shop-item-image" src="../images/topimage-classic-hamburger-2019m04-800x534.jpeg">
+                        <div class="shop-item-details">
+                            <span class="shop-item-price">$14.99</span>
+                            <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+                <div class="shop-items">
+                    <div class="shop-item">
+                        <span class="shop-item-title">Banana-Bacon Pancakes </span>
+                        <img class="shop-item-image" src="../images/pancakes.png">
+                        <div class="shop-item-details">
+                            <span class="shop-item-price">$8.99</span>
+                            <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                        </div>
+                    </div>
+                    <div class="shop-item">
+                        <span class="shop-item-title">Grilled Salmon</span>
+                        <img class="shop-item-image" src="../images/Best-Grilled-Salmon_9331-2.jpeg">
+                        <div class="shop-item-details">
+                            <span class="shop-item-price">$24.50</span>
+                            <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                        </div>
+                    </div>
+                    <div class="shop-item">
+                        <span class="shop-item-title">Spicy Crispy Chicken</span>
+                        <img class="shop-item-image" src="../images/6644380-spicy-korean-fried-chicken-with-gochujang-sauce-Diana71-4x3-1-b0b6731e6303446d8a7339dee1bbfe69.jpeg">
+                        <div class="shop-item-details">
+                            <span class="shop-item-price">$16.50</span>
+                            <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                        </div>
+                    </div>
+                    <div class="shop-item">
+                        <span class="shop-item-title">Fried Eggs</span>
+                        <img class="shop-item-image" src="../images/intro-1663868795.jpeg">
+                        <div class="shop-item-details">
+                            <span class="shop-item-price">$7.99</span>
+                            <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                        </div>
+                    </div>   
+                </div>
+            </section>
+            <section class="container content-section">
+                <h2 class="section-header">CART</h2>
+                <div class="cart-row">
+                    <span class="cart-item cart-header cart-column">ITEM</span>
+                    <span class="cart-price cart-header cart-column">PRICE</span>
+                    <span class="cart-quantity cart-header cart-column">QUANTITY</span>
+                </div>
+                <div class="cart-items">
+                </div>
+                <div class="cart-total">
+                    <strong class="cart-total-title">Total</strong>
+                    <span class="cart-total-price">$0</span>
+                </div>
+                <button class="btn btn-primary btn-purchase" type="button">PURCHASE</button>
+            </section>
         </div>
-    </div>
-
     </main>
     <footer>
         <div id="footer">
             <img src="" alt="">
             <a href="https://www.instagram.com/deberen/">Instagram</a>
-            <a href="https://www.Twitter.com">Twitter</a>
-            <h5>Copyright © 2021 De beren. All Rights Reserved</h5>
             <a href="https://www.facebook.com/deberensinds1984/">Facebook</a>
+            <h5>Copyright © 2021 De beren. All Rights Reserved</h5>
             <a href="https://www.youtube.com/channel/UCwcDcMt-JGWRYDs8EL5tjHA">Youtube</a>
+            <a href="https://www.beren.nl/drupal/media//sites/default/files/2023-02/DeBeren_menukaart_hybride_DB0123_240x330mm_ENG.pdf?undefined">Menu-pdf</a>
         </div>
     </footer>
-    <script src="../script.js" async defer></script>
 </body>
 
 </html>
