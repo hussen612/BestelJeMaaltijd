@@ -1,18 +1,24 @@
-$primary: #004741;
-$secondary: #c7c100;
+$primary: #1c3b42;
+$secondary: #d9b512;
 $white: rgb(0, 56, 74);
 $gray: #9b9b9b;
 .contact{
+    background-color: rgb(250, 250, 250);
     position: absolute;
-    margin-top: 40vh;
+    margin-top: 20vh;
     margin-left: 50%;
     transform: translate(-50%, 0);
+    height: 55%;
+    width: 23%;
+    box-shadow: 1px 1px 2px 2px rgba(0, 0, 0, 0.362);
+    border-radius: 20px;
 }
 .form__group {
   position: relative;
-  padding: 15px 0 0;
+  padding: 20px 0 0;
   margin-top: 10px;
   width: 50%;
+  margin-left: 25%;
 }
 
 .form__field {
@@ -27,10 +33,7 @@ $gray: #9b9b9b;
   padding: 7px 0;
   background: transparent;
   transition: border-color 0.2s;
-
-  &::placeholder {
-    color: transparent;
-  }
+  padding: 20px 0 20px 0;
 
   &:placeholder-shown ~ .form__label {
     font-size: 1.3rem;
@@ -38,8 +41,25 @@ $gray: #9b9b9b;
     top: 20px;
   }
 }
+.btn {
+    margin-top: 20%;
+    border: none;
+    background: $secondary;
+    cursor: pointer;
+    border-radius: 3px;
+    padding: 6px;
+    width: 200px;
+    color: white;
+    margin-left: 25px;
+    transition: all 250ms ease-in-out;
+    box-shadow: 0 3px 6px 0 rgba(0,0,0,0.2);
+    &:hover { 
+      transform: translateY(-3px);
+      box-shadow: 0 6px 6px 0 rgba(0,0,0,0.2);
+    }
+  }
 
-.form__label{
+  .form__label{
   position: absolute;
   top: 0;
   display: block;
