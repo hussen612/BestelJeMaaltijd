@@ -4,10 +4,13 @@ main {
     align-items: center;
     justify-content: center;
  flex-direction: row;
+ margin-top: 5vh;
     .slide-container{
         max-width: 1120px;
         width: 100%;
         padding: 40px 0;
+        margin-top: 3vh;
+        
       }
       .slide-content{
         margin: 0 40px;
@@ -66,7 +69,7 @@ main {
         width: 100%;
         object-fit: cover;
         border-radius: 50%;
-        border: 4px solid#1c3b42;
+        
       }
       .name{
         font-size: 18px;
