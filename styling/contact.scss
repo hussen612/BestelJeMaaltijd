@@ -50,13 +50,20 @@ $gray: #9b9b9b;
     padding: 6px;
     width: 200px;
     color: white;
-    margin-left: 25px;
+    margin-left: 18px;
     transition: all 250ms ease-in-out;
     box-shadow: 0 3px 6px 0 rgba(0,0,0,0.2);
     &:hover { 
       transform: translateY(-3px);
       box-shadow: 0 6px 6px 0 rgba(0,0,0,0.2);
     }
+  }
+
+  .contactlogo{
+    height: 100px;
+    width: auto;
+    margin-left: 23%;
+    margin-top: 15%;
   }
 
   .form__label{
